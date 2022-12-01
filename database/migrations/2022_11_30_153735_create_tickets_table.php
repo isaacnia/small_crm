@@ -24,8 +24,6 @@ return new class extends Migration
                     ->constrained('users')
                     ->onUpdate('cascade')
                     ->onDelete('cascade');
-            $table->set('categories',['']);
-            $table->set('labels',['']);
         });
     }
 
