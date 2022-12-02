@@ -22,6 +22,7 @@ class DatabaseSeeder extends Seeder
         $this->call(TicketSeeder::class);
         $this->call(CategorySeeder::class);
         $this->call(LabelSeeder::class);
+        Schema::enableForeignKeyConstraints();
         // \App\Models\User::factory()->create([
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
